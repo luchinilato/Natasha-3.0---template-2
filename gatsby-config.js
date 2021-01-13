@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Starter - Forty V2",
@@ -16,6 +18,13 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `8txxyxskobwt`,
+        accessToken: process.env.CONTENTFUL_API_TOKEN,
       },
     },
     'gatsby-plugin-sass',
