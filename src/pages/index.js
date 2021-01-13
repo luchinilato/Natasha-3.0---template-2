@@ -10,8 +10,11 @@ import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
-import pic33 from '../assets/images/3333.jpg'
-import pic44 from '../assets/images/4444.jpg'
+
+import curso_thetahealing from '../assets/images/curso_thetahealing.jpg'
+import atendimento_thetahealing from '../assets/images/atendimento_thetahealing.jpg'
+import metodo_melk from '../assets/images/metodo_melk.jpg'
+import mesa_radionica from '../assets/images/mesa-radionica.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -31,30 +34,30 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${pic33})`}}>
+                        <article style={{backgroundImage: `url(${curso_thetahealing})`}}>
                             <header className="major">
                                 <h3>Cursos de ThetaHealing</h3>
                                 <p>Ipsum dolor sit amet</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic44})`}}>
+                        <article style={{ backgroundImage: `url(${atendimento_thetahealing})`}}>
                             <header className="major">
                                 <h3>Atendimento de ThetaHealing</h3>
                                 <p>feugiat amet tempus</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic03})`}}>
+                        <article style={{ backgroundImage: `url(${mesa_radionica})`}}>
                             <header className="major">
                                 <h3>Atendimento de Mesa Radiônica</h3>
                                 <p>Lorem etiam nullam</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
+                        <article style={{ backgroundImage: `url(${metodo_melk})`}}>
                             <header className="major">
-                                <h3>Eventos</h3>
+                                <h3>Atendimento Método Melchizedek</h3>
                                 <p>Nisl sed aliquam</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
