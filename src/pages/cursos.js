@@ -42,7 +42,7 @@ const Landing = ({data}) => (
                                   <h3>{curso.nome}</h3>
                               </header>
                             
-                              {/* <p>{curso.introCurso}</p> */}
+                              <p>{curso.introducao.introducao.toString()}</p>
 
                               <ul className="actions">
                                   <li><Link to={"/" + trataLink(curso.nome)} className="button">Veja mais</Link></li>
@@ -64,7 +64,9 @@ export const query = graphql`
     allContentfulCursos {
       nodes {
         nome
-        
+        introducao {
+            introducao
+        }
       }
     }
   }

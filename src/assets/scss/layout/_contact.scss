@@ -9,6 +9,11 @@
 	#contact {
 		border-bottom: solid 1px _palette(border);
 		overflow-x: hidden;
+		color: #4c4c4c;
+
+		h1, h2, h3, h4, h5, h6 {
+			color: #4c4c4c;
+		}
 
 		> .inner {
 			@include vendor('display', 'flex');

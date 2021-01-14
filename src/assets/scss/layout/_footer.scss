@@ -7,6 +7,13 @@
 /* Footer */
 
 	#footer {
+
+		color:_palette(font-fundo-branco);
+
+		h1, h2, h3, h4, h5, h6 {
+			color: _palette(font-fundo-branco);
+		}
+
 		.copyright {
 			font-size: 0.8em;
 			list-style: none;
@@ -14,7 +21,7 @@
 
 			li {
 				border-left: solid 1px _palette(border);
-				color: _palette(fg-light);
+				color: _palette(font-fundo-branco);
 				display: inline-block;
 				line-height: 1;
 				margin-left: 1em;
