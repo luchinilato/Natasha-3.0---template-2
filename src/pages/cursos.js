@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 import { graphql } from 'gatsby'
+import { trataLink } from '../components/Utils'
 
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
@@ -32,7 +33,7 @@ const Landing = ({data}) => (
               {data.allContentfulCursos.nodes.map(curso => (
                   
                   <section key={`curso-${curso.slug}`}> 
-                      <Link to="/generic" className="image">
+                      <Link to={"/" + trataLink(curso.nome)} className="image">
                           <img src={pic08} alt="" />
                       </Link>
                       <div className="content">
@@ -40,9 +41,11 @@ const Landing = ({data}) => (
                               <header className="major">
                                   <h3>{curso.nome}</h3>
                               </header>
-                              <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+                            
+                              {/* <p>{curso.introCurso}</p> */}
+
                               <ul className="actions">
-                                  <li><Link to="/generic" className="button">Learn more</Link></li>
+                                  <li><Link to={"/" + trataLink(curso.nome)} className="button">Veja mais</Link></li>
                               </ul>
                           </div>
                       </div>
@@ -61,6 +64,7 @@ export const query = graphql`
     allContentfulCursos {
       nodes {
         nome
+        
       }
     }
   }
