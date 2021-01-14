@@ -24,3 +24,14 @@
 			border-bottom: solid 1px _palette(border);
 		}
 	}
+
+	#one{
+
+		background: _palette(bg);
+		color: _palette(bg-alt);
+
+		h2{
+			color: _palette(bg-alt);
+		}
+
+	}

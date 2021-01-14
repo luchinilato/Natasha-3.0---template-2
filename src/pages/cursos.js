@@ -6,9 +6,7 @@ import BannerLanding from '../components/BannerLanding'
 import { graphql } from 'gatsby'
 import { trataLink } from '../components/Utils'
 
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+import imagem_curso from '../assets/images/curso_thetahealing.webp'
 
 const Landing = ({data}) => (
     <Layout>
@@ -17,7 +15,7 @@ const Landing = ({data}) => (
             <meta name="description" content="Landing Page" />
         </Helmet>
 
-        <BannerLanding />
+        <BannerLanding type="curso" />
 
         <div id="main">
             <section id="one">
@@ -34,7 +32,7 @@ const Landing = ({data}) => (
                   
                   <section key={`curso-${curso.slug}`}> 
                       <Link to={"/" + trataLink(curso.nome)} className="image">
-                          <img src={pic08} alt="" />
+                          <img src={imagem_curso} alt="" />
                       </Link>
                       <div className="content">
                           <div className="inner">
